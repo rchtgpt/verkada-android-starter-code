@@ -7,20 +7,20 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-private val DarkColorPalette = darkColors(
-    surface = Blue,
-    onSurface = Navy,
-    primary = Navy,
-    onPrimary = Chartreuse
-)
+private val DarkColorPalette =
+    darkColors(
+        surface = Blue,
+        onSurface = Navy,
+        primary = Navy,
+        onPrimary = Chartreuse
+    )
 
-private val LightColorPalette = lightColors(
-
-    surface = Blue,
-    onSurface = Color.White,
-    primary = LightBlue,
-    onPrimary = Navy,
-
+private val LightColorPalette =
+    lightColors(
+        surface = Blue,
+        onSurface = Color.White,
+        primary = LightBlue,
+        onPrimary = Navy
     /* Other default colors to override
     background = Color.White,
     surface = Color.White,
@@ -28,19 +28,20 @@ private val LightColorPalette = lightColors(
     onSecondary = Color.Black,
     onBackground = Color.Black,
     onSurface = Color.Black,
-    */
-)
+     */
+    )
 
 @Composable
 fun CatPicturesTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
-    }
+    val colors =
+        if (darkTheme) {
+            DarkColorPalette
+        } else {
+            LightColorPalette
+        }
 
     MaterialTheme(
         colors = colors,

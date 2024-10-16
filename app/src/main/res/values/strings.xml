@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CatPictures</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="selectedImage">Selected Image</string>
+    <string name="gridImage">Grid Image</string>
+    <string name="heartIcon">Heart Icon</string>
+    <string name="no_items_favorited_yet">No items favorited yet :("</string>
 </resources>
